@@ -1,11 +1,9 @@
-import React from 'react'
-
 const AllEventPage = () => {
   return (
     <div>
-        <h1>All Events</h1>
+      <h1>All Events</h1>
     </div>
-  )
-}
+  );
+};
 
-export default AllEventPage
+export default AllEventPage;
