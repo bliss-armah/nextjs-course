@@ -29,11 +29,12 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   return {
-    path: [
+    paths: [
       { params: { pid: "p1" } },
       { params: { pid: "p2" } },
       { params: { pid: "p3" } },
     ],
+    fallback: false
   };
 }
 
