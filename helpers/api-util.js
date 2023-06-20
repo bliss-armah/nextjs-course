@@ -1,5 +1,5 @@
 export async function getAllEvents() {
-  const response = await fetch('https://nextjs-course-c81cc-default-rtdb.firebaseio.com/events.json');
+  const response = await fetch('https://nextjs-course-52920-default-rtdb.firebaseio.com/events.json');
   const data = await response.json();
 
   const events = [];
@@ -30,7 +30,7 @@ export async function getFilteredEvents(dateFilter) {
   const allEvents = await getAllEvents();
 
   let filteredEvents = allEvents.filter((event) => {
-    const eventDate = new Date(event.date);
+    const eventDate = new Date(event.data);
     return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;
   });
 

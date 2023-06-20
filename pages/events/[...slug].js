@@ -90,7 +90,7 @@ function FilteredEventsPage(props) {
   }
 
   const filteredEvents = loadedEvents.filter((event) => {
-    const eventDate = new Date(event.date);
+    const eventDate = new Date(event.data);
     return (
       eventDate.getFullYear() === numYear &&
       eventDate.getMonth() === numMonth - 1

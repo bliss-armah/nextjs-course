@@ -30,7 +30,7 @@ function EventDetailPage(props) {
       </Head>
       <EventSummary title={event.title} />
       <EventLogistics
-        date={event.date}
+        date={event.data}
         address={event.location}
         image={event.image}
         imageAlt={event.title}
